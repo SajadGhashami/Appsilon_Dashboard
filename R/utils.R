@@ -13,7 +13,7 @@ instruction <- tags$a(
 
 source_code <- tags$a(
   shiny::icon("github"), "Source Code",
-  href = "https://sajadghashami.shinyapps.io/Appsilon/",
+  href = "https://github.com/SajadGhashami/Appsilon_Dashboard",
   target = "_blank"
 )
 
