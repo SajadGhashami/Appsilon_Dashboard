@@ -1,0 +1,217 @@
+/* www/styles.css */
+
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9; /* Light gray background */
+  color: #333; /* Dark gray text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #EE7621; /* Set the sidebar background color to theme color */
+  color: white; /* White text for better contrast */
+  padding: 20px;
+}
+
+.sidebar .nav-link {
+  color: white; /* Set the color of links inside the sidebar to white */
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-transform: uppercase; /* Capitalize the sidebar link text */
+}
+
+.sidebar .nav-link:hover {
+  color: #D35F1B; /* Darker shade of the theme color on hover */
+}
+
+.sidebar .nav-item {
+  margin: 10px 0; /* Add some spacing between items */
+}
+
+.sidebar .nav-item .nav-link {
+  padding: 10px 15px; /* More padding to improve the clickability */
+  border-radius: 5px;
+}
+
+.sidebar .nav-item .nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(238, 118, 33, 0.5); /* Soft focus effect with theme color */
+}
+
+/* Optional: Customizing the active link in the sidebar */
+.sidebar .nav-item.active .nav-link {
+  color: white; /* Keep active links white */
+  background-color: #D35F1B; /* Use a slightly darker color for active state */
+}
+
+/* Filter styles - Apply theme color to selected elements */
+select, .selectize-input, .selectize-dropdown, .selectize-input input, .selectize-dropdown-content {
+  border-color: #EE7621; /* Theme color border for selectize inputs */
+}
+
+select:focus, .selectize-input:focus, .selectize-dropdown:focus {
+  border-color: #EE7621; /* Apply theme color to borders on focus */
+  box-shadow: 0 0 0 2px rgba(238, 118, 33, 0.4); /* Soft focus effect with theme color */
+}
+
+/* Date picker (input[type="date"]) */
+input[type="date"]:focus {
+  border-color: #EE7621; /* Apply theme color to date picker on focus */
+  box-shadow: 0 0 0 2px rgba(238, 118, 33, 0.4); /* Soft focus effect with theme color */
+}
+
+/* Slider input (input[type="range"]) */
+input[type="range"]:focus {
+  border-color: #EE7621; /* Apply theme color to slider on focus */
+  box-shadow: 0 0 0 2px rgba(238, 118, 33, 0.4); /* Soft focus effect with theme color */
+}
+
+/* Text inputs, search inputs, and other form controls */
+input[type="text"], input[type="search"], input[type="number"], textarea {
+  border-color: #EE7621; /* Theme color for input borders */
+}
+
+input[type="text"]:focus, input[type="search"]:focus, input[type="number"]:focus, textarea:focus {
+  border-color: #EE7621; /* Apply theme color to borders on focus */
+  box-shadow: 0 0 0 2px rgba(238, 118, 33, 0.4); /* Soft focus effect with theme color */
+}
+
+/* Header styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #333; /* Dark text for readability */
+  margin-bottom: 16px;
+}
+
+/* Link styling */
+a {
+  color: #EE7621; /* Theme color */
+  text-decoration: none;
+}
+
+
+
+/* Button styling */
+.btn {
+  background-color: #EE7621; /* Theme color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #D35F1B; /* Darker shade on hover */
+  border-color: #D35F1B; /* Darker border on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Panel and card styling */
+.panel, .card {
+  background-color: white;
+  border: 1px solid #EE7621; /* Theme color border */
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for modern look */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.panel:hover, .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-4px); /* Slight lift effect on hover */
+}
+
+/* Value box styling */
+.value-box {
+  background-color: #333; /* Dark background for contrast */
+  color: white; /* White text */
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-left: 8px solid #EE7621; /* Theme color accent border */
+}
+
+.value-box h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Change the color of the icons in the value box to theme color */
+.showcase-icon {
+  color: #EE7621; /* Theme color */
+}
+
+.showcase-icon:hover {
+  color: #D35F1B; /* Darker shade of theme color on hover */
+}
+
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+th, td {
+  padding: 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+th {
+  background-color: #F4F7F9; /* Light background for table headers */
+  color: #333;
+  font-weight: 600;
+  border-top: 3px solid #EE7621; /* Theme color border on top */
+}
+
+td {
+  background-color: white;
+}
+
+td:hover {
+  background-color: #f9fbfd; /* Subtle hover effect for table rows */
+}
+
+tr:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .value-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .panel, .card {
+    padding: 16px;
+  }
+
+  table th, table td {
+    padding: 12px;
+  }
+}
